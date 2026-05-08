@@ -1,4 +1,4 @@
-# gh Claude Guidance
+# TRMNL Claude Guidance
 
 This project develops TRMNL Recipes and plugins.
 
@@ -15,4 +15,3 @@ Important entry points:
 - `scripts/export-recipe.sh` for flat ZIP exports
 
 Do not put secrets, private webhook URLs, or real user payloads in the repository.
-

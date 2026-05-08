@@ -1,4 +1,4 @@
-# gh
+# TRMNL
 
 TRMNL recipe and plugin development workspace.
 
@@ -63,4 +63,3 @@ This repository is set up for building, reviewing, and publishing TRMNL private 
 - Webhook API: https://docs.trmnl.com/go/private-plugins/webhooks
 - Local preview server: https://github.com/usetrmnl/trmnlp
 - TRMNL framework docs: https://trmnl.com/framework/docs/v3/view
-

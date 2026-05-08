@@ -2,7 +2,7 @@
 
 # Repository Guidance
 
-This repo is for TRMNL recipe and plugin development. Treat `/Users/chris/git/gh` as a real public repo, not scratch space.
+This repo is for TRMNL recipe and plugin development. Treat `/Users/chris/git/TRMNL` as a real public repo, not scratch space.
 
 ## Default Workflow
 
