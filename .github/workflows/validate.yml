@@ -1,0 +1,16 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  recipes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check shell syntax
+        run: bash -n scripts/*.sh recipes/_template/bin/trmnlp recipes/examples/daily-quote/bin/trmnlp
+      - name: Validate recipes
+        run: ./scripts/validate-recipe.sh
+

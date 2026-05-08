@@ -1,0 +1,19 @@
+<div class="layout layout--row gap--medium">
+  <div class="w--1/2">
+    <span class="label label--small">{{ display_label | default: "Status" }}</span>
+    <div class="value value--xlarge">{{ headline | default: "Ready" }}</div>
+  </div>
+  <div class="w--1/2">
+    {% for item in items limit: 2 %}
+      <div class="item">
+        <div class="content">
+          <span class="title">{{ item.label }}</span>
+          <span class="description">{{ item.value }}</span>
+        </div>
+      </div>
+    {% else %}
+      <div class="description">No items yet.</div>
+    {% endfor %}
+  </div>
+</div>
+

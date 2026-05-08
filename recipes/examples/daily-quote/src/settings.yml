@@ -1,0 +1,16 @@
+---
+strategy: static
+no_screen_padding: 'no'
+dark_mode: 'no'
+static_data: '{"quote":{"text":"Make the useful thing easy to see.","author":"TRMNL Recipe Example"},"topic":"Focus"}'
+polling_verb: get
+polling_url: ''
+polling_headers: ''
+name: Daily Quote
+refresh_interval: 1440
+custom_fields:
+  - keyname: display_label
+    field_type: string
+    name: Display label
+    description: Short label shown above the quote.
+

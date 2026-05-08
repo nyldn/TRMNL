@@ -1,0 +1,6 @@
+<div class="layout layout--col gap--medium">
+  <span class="label label--small">{{ display_label | default: "Status" }}</span>
+  <div class="value value--large">{{ headline | default: "Ready" }}</div>
+  <div class="description">{{ summary | default: "Add a concise summary." | truncate: 90 }}</div>
+</div>
+

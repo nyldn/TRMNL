@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if command -v trmnlp >/dev/null 2>&1; then
+  exec trmnlp "$@"
+fi
+
+if [ -n "${XDG_CONFIG_HOME:-}" ]; then
+  config_dir="$XDG_CONFIG_HOME/trmnlp"
+else
+  config_dir="$HOME/.config/trmnlp"
+fi
+
+mkdir -p "$config_dir"
+
+if command -v docker >/dev/null 2>&1; then
+  exec docker run \
+    -it \
+    --rm \
+    --publish 4567:4567 \
+    --volume "$(pwd):/plugin" \
+    --volume "$config_dir:/root/.config/trmnlp" \
+    trmnl/trmnlp "$@"
+fi
+
+cat >&2 <<'MSG'
+Install the TRMNL preview gem:
+
+  gem install trmnl_preview
+
+Or install Docker:
+
+  https://docs.docker.com/get-docker/
+MSG
+exit 1
+

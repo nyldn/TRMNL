@@ -1,0 +1,15 @@
+{
+  "headline": "Ready",
+  "summary": "Replace this with compact sample data.",
+  "items": [
+    {
+      "label": "First",
+      "value": "100"
+    },
+    {
+      "label": "Second",
+      "value": "42"
+    }
+  ]
+}
+

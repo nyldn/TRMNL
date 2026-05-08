@@ -1,0 +1,15 @@
+---
+watch:
+  - .trmnlp.yml
+  - src
+custom_fields:
+  display_label: "Daily Quote"
+variables:
+  trmnl:
+    user:
+      name: "Example User"
+      locale: "en-US"
+      utc_offset: "-04:00"
+    plugin_settings:
+      instance_name: "Daily Quote"
+

@@ -1,0 +1,7 @@
+interface:
+  display_name: "TRMNL Public Plugin Plan"
+  short_description: "Plan hosted TRMNL public plugins"
+  default_prompt: "Use $trmnl-public-plugin-plan to scope this hosted TRMNL public plugin."
+policy:
+  allow_implicit_invocation: true
+

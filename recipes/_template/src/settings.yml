@@ -1,0 +1,16 @@
+---
+strategy: static
+no_screen_padding: 'no'
+dark_mode: 'no'
+static_data: '{"headline":"Ready","summary":"Replace this with compact sample data.","items":[{"label":"First","value":"100"},{"label":"Second","value":"42"}]}'
+polling_verb: get
+polling_url: ''
+polling_headers: ''
+name: TRMNL Recipe Template
+refresh_interval: 1440
+custom_fields:
+  - keyname: display_label
+    field_type: string
+    name: Display label
+    description: Short label shown in the title bar.
+

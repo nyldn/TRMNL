@@ -1,0 +1,7 @@
+interface:
+  display_name: "TRMNL Recipe Build"
+  short_description: "Build TRMNL recipe source files"
+  default_prompt: "Use $trmnl-recipe-build to create or update this TRMNL recipe."
+policy:
+  allow_implicit_invocation: true
+

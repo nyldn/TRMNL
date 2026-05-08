@@ -1,0 +1,8 @@
+<div class="layout layout--col layout--center gap--medium">
+  <span class="label">{{ display_label | default: "Daily Quote" }}</span>
+  <div class="richtext richtext--center">
+    <p>{{ quote.text | default: "Add a quote." | truncate: 120 }}</p>
+  </div>
+  <div class="description">{{ quote.author | default: "Unknown" }}</div>
+</div>
+

@@ -1,0 +1,16 @@
+# TRMNLP configuration for trmnl-recipe-template.
+---
+watch:
+  - .trmnlp.yml
+  - src
+custom_fields:
+  display_label: "Status"
+variables:
+  trmnl:
+    user:
+      name: "Example User"
+      locale: "en-US"
+      utc_offset: "-04:00"
+    plugin_settings:
+      instance_name: "TRMNL Recipe Template"
+

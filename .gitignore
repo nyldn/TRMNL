@@ -1,0 +1,12 @@
+.DS_Store
+*.zip
+exports/
+.env
+.env.*
+!.env.example
+.trmnlp.local.yml
+tmp/
+log/
+node_modules/
+vendor/bundle/
+

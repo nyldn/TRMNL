@@ -1,0 +1,7 @@
+interface:
+  display_name: "TRMNL Recipe Research"
+  short_description: "Research TRMNL recipe feasibility"
+  default_prompt: "Use $trmnl-recipe-research to evaluate this TRMNL recipe idea and recommend an implementation path."
+policy:
+  allow_implicit_invocation: true
+

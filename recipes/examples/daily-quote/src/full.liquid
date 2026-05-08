@@ -1,0 +1,13 @@
+<div class="layout layout--col layout--center gap--large">
+  <span class="label">{{ display_label | default: topic | default: "Daily Quote" }}</span>
+  <div class="richtext richtext--center">
+    <p>{{ quote.text | default: "Add a quote." }}</p>
+  </div>
+  <div class="description">- {{ quote.author | default: "Unknown" }}</div>
+</div>
+
+<div class="title_bar">
+  <span class="title">Daily Quote</span>
+  <span class="instance">{{ trmnl.plugin_settings.instance_name | default: "Example" }}</span>
+</div>
+

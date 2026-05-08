@@ -1,0 +1,38 @@
+name: Recipe idea
+description: Capture a TRMNL Recipe idea for research and buildout.
+title: "[recipe] "
+labels: ["recipe", "research"]
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired screen
+      description: What should the TRMNL screen show at a glance?
+    validations:
+      required: true
+  - type: textarea
+    id: data
+    attributes:
+      label: Data source
+      description: API, RSS feed, static content, webhook source, or manual input.
+    validations:
+      required: true
+  - type: dropdown
+    id: strategy
+    attributes:
+      label: Likely strategy
+      options:
+        - static
+        - polling
+        - webhook
+        - plugin merge
+        - public plugin
+        - unknown
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints
+      description: Auth, rate limits, payload size, privacy, or refresh cadence.
+

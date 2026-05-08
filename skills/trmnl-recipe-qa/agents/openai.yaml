@@ -1,0 +1,7 @@
+interface:
+  display_name: "TRMNL Recipe QA"
+  short_description: "Review TRMNL recipe readiness"
+  default_prompt: "Use $trmnl-recipe-qa to validate this TRMNL recipe before export or publishing."
+policy:
+  allow_implicit_invocation: true
+
